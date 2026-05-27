@@ -11,7 +11,7 @@ create table netology.persons(
 
 select name, surname
 from netology.persons 
-where name.city_of_living = 'Moscow';
+where city_of_living = 'Moscow';
 
 select *
 from netology.persons
