@@ -6,11 +6,12 @@ create table netology.persons(
  phone_number varchar (20),
  city_of_living varchar (50),
 
- constraint primary_key_persons PRIMARY KEY (name, surname, age)
+ PRIMARY KEY (name, surname, age)
 );
 
-select from netology.persons name, surname
-where name.city_of_living = Moscow;
+select name, surname
+from netology.persons 
+where name.city_of_living = 'Moscow';
 
 select *
 from netology.persons
